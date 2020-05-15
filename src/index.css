@@ -1,0 +1,86 @@
+body * {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 350px;
+  margin: auto;
+  background-color: #333;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #f00;
+  margin-bottom: 0.5em;
+}
+
+ol {
+  background-color: #aaa;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+li:nth-child(even) {
+  background-color: #888;
+  color: #222;
+}
+
+li:nth-child(odd) {
+  background-color: #333;
+  color: #aaa;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #aaa;
+  border-radius: 1em;
+  /* padding: 1em; */
+  margin-top: 1em;
+}
+
+form>* {
+  margin: 0.8em;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+}
+
+label>* {
+  flex-basis: 35%;
+  margin: 0.2em;
+}
+
+option {
+  text-align: center;
+}
+
+label :nth-child(2) {
+  flex-grow: 1;
+}
+
+button {
+  color: #ff0000;
+  font-weight: bold;
+}
