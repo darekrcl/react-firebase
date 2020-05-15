@@ -39,6 +39,7 @@ const AddTodo = () => {
             <label htmlFor="groupInput">
                 <span>Grupa: </span>
                 <select id="groupInput" name="taskGroup" value={newTodo.taskGroup} onChange={handleOnChange} required>
+                    <option value=""></option>
                     <option value="1a">1a</option>
                     <option value="1a">1b</option>
                     <option value="2a">2a</option>
@@ -50,6 +51,7 @@ const AddTodo = () => {
             <label htmlFor="NameInput">
                 <span>Zadanie: </span>
                 <select id="NameInput" name="taskName" value={newTodo.taskName} onChange={handleOnChange} required>
+                    <option value=""></option>
                     <option value="kartkówka">kartkówka</option>
                     <option value="sprawdzian">sprawdzian</option>
                     <option value="powtórka">powtórka</option>

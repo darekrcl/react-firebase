@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import firebase from '../firebase'
-import { unstable_renderSubtreeIntoContainer } from 'react-dom'
 
 const List = () => {
     const [todos, setTodos] = useState([])
@@ -23,7 +22,6 @@ const List = () => {
         return str.split("-").reverse().join("-");
     }
 
-    console.log(todos)
     return (
         <>
             <ol>
